@@ -104,7 +104,7 @@
             bindings = <
             &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7         &kp N8        &kp N9     &kp KP_PLUS
             &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp KP_MINUS
-&caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp KP_MULTIPLY  &trans
+&caps_word  &kp GRAVE  &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp KP_MULTIPLY  &trans
                                    &trans    &trans     &trans      &mo ADJ   &kp KP_N0      &trans
             >;
         };
@@ -130,7 +130,7 @@
             bindings = <
         &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &kp CARET  &kp AMPS      &kp RA(U)             &kp SQT                &kp DQT
         &kp RA(A)         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &kp MINUS  &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(O)
-&trans  &kp RA(F18)       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &kp GRAVE  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH   &trans
+&trans  &kp RA(GRAVE)     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &kp GRAVE  &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH   &trans
                                         &trans        &kp N0        &kp MINUS            &trans     &kp C_PP      &trans
             >;
         };
@@ -154,9 +154,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &sys_reset      &kp F7  &kp F8  &kp F9  &kp F12
-              &bt BT_SEL 2    &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &bootloader     &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_SEL 0  &bt BT_SEL 1    &kp EXCL       &kp AT_SIGN           &kp HASH               &kp PIPE           &studio_unlock  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+              &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &sys_reset      &kp F7  &kp F8  &kp F9  &bt BT_SEL 1
+              &bt BT_SEL 2    &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &bootloader     &kp F4  &kp F5  &kp F6  &bt BT_SEL 1
+&bt BT_SEL 0  &kp TILDE       &kp EXCL       &kp AT_SIGN           &kp HASH               &kp PIPE           &studio_unlock  &kp F1  &kp F2  &kp F3  &bt BT_SEL 0  &trans
                                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER          &trans          &trans  &trans
             >;
         };
